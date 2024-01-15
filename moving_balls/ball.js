@@ -25,11 +25,11 @@ function createBalls() {
         balls.push({
             id: ballId,
             reverseX: !!Math.round(Math.random()),
-            reverseY: !!Math.round(Math.random()),
+            reverseY: !!Math.round(Math.random()),  
             positionX: window.innerWidth / 2,
             positionY: window.innerHeight / 2,
             width: randomWidth,
-            velocity: 50 - (randomWidth / 8)
+            velocity: 30 - 150 * (randomWidth / window.innerWidth)
         })
 
         ball.style.left = balls[i].positionX + 'px';
