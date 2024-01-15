@@ -20,7 +20,7 @@ function createBalls() {
 
         document.body.appendChild(ball);
 
-        let randomWidth = 50 + Math.round(Math.random() * 150);
+        let randomWidth = 50 + Math.round(Math.random() * 350);
 
         balls.push({
             id: ballId,
@@ -29,7 +29,7 @@ function createBalls() {
             positionX: 200 + Math.round(Math.random() * (Xmax - 400)),
             positionY: 200 + Math.round(Math.random() * (Ymax - 400)),
             width: randomWidth,
-            velocity: 30 - (randomWidth / 10)
+            velocity: 50 - (randomWidth / 10)
         })
 
         ball.style.left = balls[i].positionX + 'px';
@@ -42,10 +42,7 @@ function createBalls() {
     console.log('balls created!', balls)
 };
 
-//write a function that can change the position of the html element "ball"
 function moveBalls() {
-
-    // let i = Math.round(Math.random() * 9);
 
     if (i == ballsQty) i = 0;
 
