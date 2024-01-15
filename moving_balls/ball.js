@@ -29,7 +29,7 @@ function createBalls() {
             positionX: 200 + Math.round(Math.random() * (Xmax - 400)),
             positionY: 200 + Math.round(Math.random() * (Ymax - 400)),
             width: randomWidth,
-            velocity: 50 - (randomWidth / 10)
+            velocity: 50 - (randomWidth / 7)
         })
 
         ball.style.left = balls[i].positionX + 'px';
