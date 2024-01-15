@@ -26,8 +26,8 @@ function createBalls() {
             id: ballId,
             reverseX: false,
             reverseY: false,
-            positionX: 200 + Math.round(Math.random() * (Xmax - 400)),
-            positionY: 200 + Math.round(Math.random() * (Ymax - 400)),
+            positionX: 400 + Math.round(Math.random() * (Xmax - 600)),
+            positionY: 400 + Math.round(Math.random() * (Ymax - 600)),
             width: randomWidth,
             velocity: 50 - (randomWidth / 7)
         })
