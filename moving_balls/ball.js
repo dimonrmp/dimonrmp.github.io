@@ -20,7 +20,7 @@ function createBalls() {
 
         document.body.appendChild(ball);
 
-        let randomWidth = 50 + Math.round(Math.random() * 350);
+        let randomWidth = 50 + Math.round(Math.random() * window.innerHeight / 5);
 
         balls.push({
             id: ballId,
