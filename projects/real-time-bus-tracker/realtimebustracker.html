@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Real-time bus tracker</title>
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+	<link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
+	<link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+	<div id="map"></div>
+
+	<div class="map-overlay top">
+		<select style="font-size: 1em;" id="routesList" onchange="getNewRoute(this.value)">
+			<option value="none"> ---Choose the route--- </option>
+		</select>
+	</div>
+
+	<script src="../../assets/vendor/purecounter/purecounter_vanilla.js"></script> 
+	<script src="../../assets/vendor/aos/aos.js"></script>
+	<script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+	<script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+	<script src="../../assets/vendor/typed.js/typed.umd.js"></script>
+	<script src="../../assets/vendor/bootstrap/js/bootstrap.js"></script>
+	<script src="../../assets/vendor/waypoints/noframework.waypoints.js"></script>
+	<script type="text/javascript" src="mapanimation.js"></script>
+	
+</body>
+
+</html>
